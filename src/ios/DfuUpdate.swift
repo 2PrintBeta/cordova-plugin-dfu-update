@@ -133,6 +133,7 @@ import iOSDFULibrary
         initiator.enableUnsafeExperimentalButtonlessServiceInSecureDfu = true
         initiator.packetReceiptNotificationParameter = UInt16(packetReceiptNotificationsValue)
         initiator.forceDfu = false
+        initiator.forceScanningForNewAddressInLegacyDfu  = true;
         initiator.delegate = self
         initiator.progressDelegate = self
 
