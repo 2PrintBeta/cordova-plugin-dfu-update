@@ -135,6 +135,7 @@ import iOSDFULibrary
         initiator.forceDfu = false
         initiator.delegate = self
         initiator.progressDelegate = self
+        initiator.alternativeAdvertisingNameEnabled = false;
 
         //dfuController = initiator.start()!
         dfuController = initiator.with(firmware: selectedFirmware!).start(target: deviceP)
